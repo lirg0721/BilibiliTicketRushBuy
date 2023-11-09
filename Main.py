@@ -9,12 +9,12 @@ def Init():
     ch_options = Options()
     ch_options.add_argument("--headless")
     global TargetTime
-    TargetTime = "2023-07-12 23:00:00.00000000"  # 设置抢购时间
+    TargetTime = "2023-11-9 10:51:00.00000000"  # 设置抢购时间
 
     global WebDriver
     # WebDriver = webdriver.Chrome(chrome_options=ch_options)         #使用headless游览器，速度更快
     WebDriver = webdriver.Chrome()  # 使用可视化游览器
-    WebDriver.get("https://show.bilibili.com/platform/detail.html?id=73710&from=pc_ticketlist")  # 输入目标购买页面
+    WebDriver.get("https://show.bilibili.com/platform/detail.html?id=78123&from=pc_search")  # 输入目标购买页面
 
     global Price, Session
     Session = '1'  # 场次设置：修改引号内部的数字，数字对应第选项的序号，选项序号从左到右从1开始依次排列
